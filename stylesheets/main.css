@@ -1,0 +1,39 @@
+body {
+	width: 100%;
+    Height: 100%
+	margin: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	border-style: solid;
+}
+.navigation {
+	text-align: center;
+    background-image: url("images/navBG.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: pink;
+	padding: 24px 0 24px 0;
+}
+.navigation h1{
+	font-size: 45px;
+}
+ul li{
+	display: inline;
+	padding-right: 45px;
+	font-size: 25px;
+}
+.content {
+	padding: 25px 30px 30px 30px;
+	background-color: #F0F0F0;
+}
+.footer {
+	border-top: solid;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 10px;
+	color: pink;
+	text-align: center;
+	background-color: #7FFFD4;
+}
+
+
+
