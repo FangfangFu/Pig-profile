@@ -3,6 +3,38 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 	<style>
+	.self_clear:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.title {
+		text-align: center;
+	}
+	
+	figure {
+		width: 200px;
+		display: clear;
+	}
+	
+	figure.left_figure {
+		float: left;
+	}
+	
+	figure.right_figure {
+		float: right;
+	}
+	
+	figcaption {
+		text-align: center;
+		font-size: 10px;
+	}
+	
+	figure img {
+		width: 100%;
+		height: auto;
+	}
 	</style>
 	
 </head>
@@ -17,7 +49,24 @@
 	</ul>
 </div>
 <div class="content">
-  <p>Pig Food</p>
+	<h2 class="title">Pig Food</h2>
+	<figure class="right_figure">
+		<img src="images/sow_with_piglet.jpg" alt="Sow with piglet eating">
+		<figcaption>Sow with piglet eating.</figcaption>
+	</figure>
+	<p>Pigs are omnivores, which means that they consume both plants and animals. In the wild, they are foraging animals, primarily eating leaves, grasses, roots, fruits, and flowers. In confinement, pigs are fed mostly corn and soybean meal with a mixture of vitamins and minerals added to the diet. Traditionally they were raised on dairy farms and called "mortgage lifters" due to their ability to use the excess milk as well as whey from cheese and butter making combined with pasture. Older pigs will consume three to five gallons of water per day.<a href="#source1">[1]</a><p>
+	<figure class="left_figure">
+		<img src="images/domestic_boar.jpg" alt="Domestic Boar eating">
+		<figcaption>Domestic Boar eating.</figcaption>
+	</figure>
+	<h2 class="title">Feed Domestic Pigs</h2>
+	<p>Pigs are normally fed twice a day. The amount of feed depends on the age and the reproductive state of the pig. A foraging pig will obtain some of its food from natural sources as long as the foraging area is able to provide it. This would include grass, brambles, acorns, apples, and even earth worms. It is important to supplement this with a balanced compound feed, to ensure that the pig receives all the nutrients it requires. Potatoes, carrots and other fruit and vegetables can also be fed, as long as these are not catering waste, from your own or a commercial kitchen or anywhere that sells meat.<a href="#source2">[2]</a></p>
+	<div style="clear: both;"></div> 
+	<p>Sources:</p>
+	<ol>
+		<li id="source1">Wikipedia - <a href="https://en.wikipedia.org/wiki/Pig">https://en.wikipedia.org/wiki/Pig</a></li>
+		<li id="source2">Small Holder Range - <a href="http://www.smallholderfeed.co.uk/healthcare-and-management/pig-feeding-guide-original.aspx">http://www.smallholderfeed.co.uk/healthcare-and-management/pig-feeding-guide-original.aspx</a></li>
+	</ol>
 </div>
 <div class="footer">
   <p>&copy; Pig-Profile - 2015</p>
