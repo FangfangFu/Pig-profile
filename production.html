@@ -3,6 +3,38 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 	<style>
+	.self_clear:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.title {
+		text-align: center;
+	}
+	
+	figure {
+		width: 200px;
+		display: clear;
+	}
+	
+	figure.left_figure {
+		float: left;
+	}
+	
+	figure.right_figure {
+		float: right;
+	}
+	
+	figcaption {
+		text-align: center;
+		font-size: 10px;
+	}
+	
+	figure img {
+		width: 100%;
+		height: auto;
+	}
 	</style>
 	
 </head>
@@ -17,7 +49,28 @@
 	</ul>
 </div>
 <div class="content">
-  <p>Pig Production</p>
+	<h2 class="title">Pig Production</h2>
+	<figure class="right_figure">
+		<img src="images/pigs_in_farm.jpg" alt="Pigs in a farm">
+		<figcaption>Pigs in a farm.</figcaption>
+	</figure>
+	<p>Pig farming is the raising and breeding of domestic pigs. It is a branch of animal husbandry. Pigs are raised principally as food (e.g. pork, bacon, gammon) and sometimes for their skin.</p>
+		<figure class="left_figure">
+		<img src="images/suckling.jpg" alt="Suckling piglets">
+		<figcaption>Suckling piglets.</figcaption>
+	</figure>
+	<p>Pigs are amenable to many different styles of farming. intensive commercial units, commercial free range enterprises, extensive farming - being allowed to wander around a village, town or city, or tethered in a simple shelter or kept in a pen outside the owners house. Historically pigs were kept in small numbers and were closely associated with the residence of the owner, or in the same village or town. They were valued as a source of meat, fat and for the ability to turn inedible food into meat, and often fed household food waste if kept on a homestead. Pigs have been farmed to dispose of municipal garbage on a large scale.</p>
+	<figure class="right_figure">
+		<img src="images/farm.jpg" alt="Pigs in a farm">
+		<figcaption>Pigs in a farm.</figcaption>
+	</figure>
+	<p>All these forms of pig farm are in use today. In developed nations, commercial farms house thousands of pigs in climate-controlled buildings. Pigs are a popular form of livestock, with more than one billion pigs killed each year worldwide, 100 million of them in the USA. The majority of pigs are used for human food but also supply skin, fat and other materials for use as clothing, ingredients for processed foods, cosmetics and other and medical use.</p>
+	<p>The activities on a pig farm depend on the husbandry style of the farmer, and range from very little intervention (as when pigs are allowed to roam villages or towns and dispose of garbage) to intensive systems where the pigs are contained in a building for the majority of their lives. Each pig farm will tend to adapt to the local conditions and food supplies and fit their practices to their specific situation.</p>
+	<div style="clear: both;"></div> 
+	<p>Sources:</p>
+	<ol>
+		<li id="source1">Wikipedia - <a href="https://en.wikipedia.org/wiki/Pig_farming">https://en.wikipedia.org/wiki/Pig_farming</a></li>
+	</ol>
 </div>
 <div class="footer">
   <p>&copy; Pig-Profile - 2015</p>
