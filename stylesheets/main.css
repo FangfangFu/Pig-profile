@@ -24,6 +24,7 @@ ul li{
 .content {
 	padding: 20px 25px 25px 25px;
 	background-color: #F0F0F0;
+	background-repeat: repeat;
 }
 .footer {
 	border-top: solid;
