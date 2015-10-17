@@ -3,8 +3,12 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 	<style>
+	.self_clear:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
 	.content {
-	  height: 900px;
 	  width: 100%;
 	}
 	h2 {
@@ -14,7 +18,7 @@
 	figure {
       margin: 5px;
       padding: 5px;
-      height: auto;
+      height: 380px;
       width: auto;
       float: left;
       text-align: center;
@@ -42,10 +46,14 @@
     figcaption {
       text-align: center;
       font-weight: normal;
-      width: 120px;
       margin: 5px;
     }
-	
+	.content {
+		padding: 0;
+	}
+	.gallery {
+		float: left;
+	}
 	</style>
 	
 </head>
@@ -60,44 +68,47 @@
 	</ul>
 </div>
 <div class="content">
-  <h2>Pig Type</h2>
-  <figure class="image1">
-    <img id="type1" src="images/poland.jpg">
+  <div class="gallery">
+	<h2>Pig Type</h2>
+	<figure class="image1">
+	<img id="type1" src="images/poland.jpg">
 	<figcaption><a href="http://knowledgebase.lookseek.com/Poland-China-Pig.html">Poland China Pig</a></figcaption>
-  </figure>
-  <figure class="image1">
-    <img id="type2" src="images/AmericanYorkshire.jpg">
+	</figure>
+	<figure class="image1">
+	<img id="type2" src="images/AmericanYorkshire.jpg">
 	<figcaption><a href="http://bib.ge/gori/open.php?id=836">American Yorkshire Pig</a></figcaption>
-  </figure>
-  <figure class="image1">
-    <img id="type3" src="images/mangalitsa.jpg">
+	</figure>
+	<figure class="image1">
+	<img id="type3" src="images/mangalitsa.jpg">
 	<figcaption><a href="https://en.wikipedia.org/wiki/Mangalica">Mangalica Pig</a></figcaption>
-  </figure>
-  <figure class="image2">
-    <img id="type4" src="images/tamworth.jpg">
+	</figure>
+	<figure class="image2">
+	<img id="type4" src="images/tamworth.jpg">
 	<figcaption><a href="http://www.tamworthswine.org/tamworth-history/">Tamworth Pig</a></figcaption>
-  </figure>
-  <figure class="image2">
-    <img id="type5" src="images/miniature.jpg">
+	</figure>
+	<figure class="image2">
+	<img id="type5" src="images/miniature.jpg">
 	<figcaption><a href="http://greatinspire.com/35-cute-miniature-pig-pictures/">Cute Miniature Pig</a></figcaption>
-  </figure>
-  <figure class="image2">
-    <img id="type6" src="images/hereford.jpg">
+	</figure>
+	<figure class="image2">
+	<img id="type6" src="images/hereford.jpg">
 	<figcaption><a href="https://en.wikipedia.org/wiki/Hereford_pig">Hereford Pig</a></figcaption>
-  </figure>
-  <figure class="image3">
-    <img id="type7" src="images/Iberian.jpg">
+	</figure>
+	<figure class="image3">
+	<img id="type7" src="images/Iberian.jpg">
 	<figcaption><a href="http://pasturebraised.com/iberian-pig-school/">Iberian Pig</a></figcaption>
-  </figure>
-  <figure class="image3">
-    <img id="type8" src="images/oxford.jpg">
+	</figure>
+	<figure class="image3">
+	<img id="type8" src="images/oxford.jpg">
 	<figcaption><a href="https://en.wikipedia.org/wiki/Oxford_Sandy_and_Black">Oxford Sandy and Black Pig</a></figcaption>
-  </figure>
-  <figure class="image3">
-    <img id="type9" src="images/swabian.jpg">
+	</figure>
+	<figure class="image3">
+	<img id="type9" src="images/swabian.jpg">
 	<figcaption><a href="https://en.wikipedia.org/wiki/Swabian-Hall_swine">Swabian-Hall Swine Pig</a></figcaption>
-  </figure>
+	</figure>
+  </div>
 </div>
+<div style="clear: both;"></div> 
 <div class="footer">
   <p>&copy; Pig-Profile - 2015</p>
 </div>
