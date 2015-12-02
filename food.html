@@ -1,81 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link href='css/bootstrap.css' rel="stylesheet">
+	<link href='css/main.css' rel='stylesheet'>
 	<style>
-	.self_clear:after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-	
-	.title {
-		text-align: center;
-	}
-	
-	figure {
-		width: 200px;
-		display: clear;
-	}
-	
-	figure.left_figure {
-		float: left;
-	}
-	
-	figure.right_figure {
-		float: right;
-	}
-	
 	figcaption {
+	    color: brown;
 		text-align: center;
-		font-size: 10px;
+		font-size: 20px;
 	}
 	
 	figure img {
-		width: 100%;
-		height: auto;
+		width: 300px;
+		height: 250px;
+		padding-top: 60px;
 	}
-	
-	.container {
-		width: 1000px;
-		margin: auto;
+	h2 {
+	  color: #E6A7B0;
+	  font-family: Georgia;
+	  font-size: 25px;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	}
+	.source {
+	  padding-top: 30px;
+	  padding-bottom: 15px;
+	}
+	.content{
+	  font-size: 20px;
+	  line-height: 1.5;
+	}
+	#source2{
+	  padding-bottom: 25px;
 	}
 	</style>
 	
 </head>
 <body>
-<div class="navigation">
-	<h1>Pig-Profile</h1>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="type.html">Type</a></li>
-	  <li><a href="food.html">Food</a></li>
-	  <li><a href="production.html">Production</a></li>
-	</ul>
-</div>
-<div class="content">
-	<div class="container">
-	<h2 class="title">Pig Food</h2>
-	<figure class="right_figure">
-		<img src="images/sow_with_piglet.jpg" alt="Sow with piglet eating">
-		<figcaption>Sow with piglet eating.</figcaption>
-	</figure>
-	<p>Pigs are omnivores, which means that they consume both plants and animals. In the wild, they are foraging animals, primarily eating leaves, grasses, roots, fruits, and flowers. In confinement, pigs are fed mostly corn and soybean meal with a mixture of vitamins and minerals added to the diet. Traditionally they were raised on dairy farms and called "mortgage lifters" due to their ability to use the excess milk as well as whey from cheese and butter making combined with pasture. Older pigs will consume three to five gallons of water per day.<a href="#source1">[1]</a><p>
-	<figure class="left_figure">
-		<img src="images/domestic_boar.jpg" alt="Domestic Boar eating">
-		<figcaption>Domestic Boar eating.</figcaption>
-	</figure>
-	<h2 class="title">Feed Domestic Pigs</h2>
-	<p>Pigs are normally fed twice a day. The amount of feed depends on the age and the reproductive state of the pig. A foraging pig will obtain some of its food from natural sources as long as the foraging area is able to provide it. This would include grass, brambles, acorns, apples, and even earth worms. It is important to supplement this with a balanced compound feed, to ensure that the pig receives all the nutrients it requires. Potatoes, carrots and other fruit and vegetables can also be fed, as long as these are not catering waste, from your own or a commercial kitchen or anywhere that sells meat.<a href="#source2">[2]</a></p>
-	<div style="clear: both;"></div> 
-	<p>Sources:</p>
-	<ol>
-		<li id="source1">Wikipedia - <a href="https://en.wikipedia.org/wiki/Pig">https://en.wikipedia.org/wiki/Pig</a></li>
-		<li id="source2">Small Holder Range - <a href="http://www.smallholderfeed.co.uk/healthcare-and-management/pig-feeding-guide-original.aspx">http://www.smallholderfeed.co.uk/healthcare-and-management/pig-feeding-guide-original.aspx</a></li>
-	</ol>
+  <div class='title-background col-md-12 text-center'>
+	  <div class='title'></div>
+    </div>
+
+    <div class='navigation text-center'>	
+		<ul class='list-inline'>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="type.html">TYPE</a></li>
+			<li><a href="food.html">FOOD</a></li>
+			<li><a href="production.html">PRODUCTION</a></li>
+			<li class="dropdown">
+			  <a class='dropdown-toggle' href='#' data-toggle='dropdown'>ABOUT<span class='caret'></span></a>
+			  <ul class='dropdown-menu text-right'>
+			    <li><a href='contact.html'>Contact us</a></li>
+				
+				<li><a href='http://user.qzone.qq.com/450490365'>QQzone</a></li>
+				<li><a href='https://www.facebook.com/fangfang.fu.315'>Facebook</a></li>
+			  </ul>
+			</li>
+		</ul>
+	</div>
+<div class="container">
+	<div class='content text-center'>
+		<div class='col-md-9'>
+			<h2>Pig Food</h2>
+			<p>Pigs are omnivores, which means that they consume both plants and animals. In the wild, they are foraging animals, primarily eating leaves, grasses, roots, fruits, and flowers. In confinement, pigs are fed mostly corn and soybean meal with a mixture of vitamins and minerals added to the diet. Traditionally they were raised on dairy farms and called "mortgage lifters" due to their ability to use the excess milk as well as whey from cheese and butter making combined with pasture. Older pigs will consume three to five gallons of water per day.<a href="#source1">[1]</a><p>
+		</div>
+		<div class='col-md-3'>
+			<figure class="right_figure">
+				<img src="images/sow_with_piglet.jpg" alt="Sow with piglet eating">
+				<figcaption>Sow with piglet eating.</figcaption>
+			</figure>
+		</div>
+		<div class='col-md-9'>
+			<h2>Feed Domestic Pigs</h2>
+			<p>Pigs are normally fed twice a day. The amount of feed depends on the age and the reproductive state of the pig. A foraging pig will obtain some of its food from natural sources as long as the foraging area is able to provide it. This would include grass, brambles, acorns, apples, and even earth worms. It is important to supplement this with a balanced compound feed, to ensure that the pig receives all the nutrients it requires. Potatoes, carrots and other fruit and vegetables can also be fed, as long as these are not catering waste, from your own or a commercial kitchen or anywhere that sells meat.<a href="#source2">[2]</a></p>
+		</div>
+		<div class='col-md-3'>
+			<figure class="left_figure">
+				<img src="images/domestic_boar.jpg" alt="Domestic Boar eating">
+				<figcaption>Domestic Boar eating.</figcaption>
+			</figure>
+		</div>
+		<div class='col-md-12 text-left'>
+			<p class='source'>Sources:</p>
+			<ol>
+				<li id="source1">1. Wikipedia - <a href="https://en.wikipedia.org/wiki/Pig">https://en.wikipedia.org/wiki/Pig</a></li>
+				<li id="source2">2. Small Holder Range - <a href="http://www.smallholderfeed.co.uk/healthcare-and-management/pig-feeding-guide-original.aspx">http://www.smallholderfeed.co.uk/healthcare-and-management/pig-feeding-guide-original.aspx</a></li>
+			</ol>
+		</div>
 	</div>
 </div>
-<div class="footer">
+<div class="footer text-center">
   <p>&copy; Pig-Profile - 2015</p>
 </div>
 </body>

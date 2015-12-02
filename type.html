@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link href='css/bootstrap.css' rel="stylesheet">
+	<link href='css/main.css' rel='stylesheet'>
 	<style>
-	.content {  
-		width: 1000px;
-		margin:auto;
-		padding: 0;
-        background-color: pink;
-	}
-	h2 {
-	  text-align: center;
-	  font-size: 25px;
-	}
-	figure {
-      margin: 5px;
-      padding: 5px;
-      height: 380px;
-      width: auto;
-      float: left;
-      text-align: center;
-    }	
-    .image img {
-      display: inline-block;
-      margin: 5px;
+	.image img {
 	  width: 300px;
 	  height: 300px;
+	  padding-bottom: 5px;
     }
-    figcaption {
-      text-align: center;
-      font-weight: normal;
-      margin: 5px;
-    }
-	.gallery{
-	float: center;
+	figcaption {
+	  padding-bottom: 15px;
 	}
-	</style>
+	figcaption a {
+	  color: brown;
+	}
+	h2 {
+	  color: #E6A7B0;
+	  font-size: 25px;
+	  padding-top: 40px;
+	  padding-bottom: 40px;
+	}
+	.content{
+	  padding-bottom: 40px;
+	}
 	
+	</style>
 </head>
 <body>
-<div class="navigation">
-	<h1>Pig-Profile</h1>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="type.html">Type</a></li>
-	  <li><a href="food.html">Food</a></li>
-	  <li><a href="production.html">Production</a></li>
-	</ul>
-</div>
-<div class="content">
-  <div class="gallery">
-	<h2>Pig Type</h2>
-	<figure class="image">
-	<img id="type1" src="images/poland.jpg">
-	<figcaption><a href="http://knowledgebase.lookseek.com/Poland-China-Pig.html">Poland China Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type2" src="images/AmericanYorkshire.jpg">
-	<figcaption><a href="http://bib.ge/gori/open.php?id=836">American Yorkshire Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type3" src="images/mangalitsa.jpg">
-	<figcaption><a href="https://en.wikipedia.org/wiki/Mangalica">Mangalica Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type4" src="images/tamworth.jpg">
-	<figcaption><a href="http://www.tamworthswine.org/tamworth-history/">Tamworth Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type5" src="images/miniature.jpg">
-	<figcaption><a href="http://greatinspire.com/35-cute-miniature-pig-pictures/">Cute Miniature Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type6" src="images/hereford2.jpg">
-	<figcaption><a href="https://en.wikipedia.org/wiki/Hereford_pig">Hereford Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type7" src="images/Iberian.jpg">
-	<figcaption><a href="http://pasturebraised.com/iberian-pig-school/">Iberian Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type8" src="images/oxford.jpg">
-	<figcaption><a href="https://en.wikipedia.org/wiki/Oxford_Sandy_and_Black">Oxford Sandy and Black Pig</a></figcaption>
-	</figure>
-	<figure class="image">
-	<img id="type9" src="images/swabian.jpg">
-	<figcaption><a href="https://en.wikipedia.org/wiki/Swabian-Hall_swine">Swabian-Hall Swine Pig</a></figcaption>
-	</figure>
+<div class='title-background col-md-12 text-center'>
+	  <div class='title'></div>
+    </div>
+
+    <div class='navigation text-center'>	
+		<ul class='list-inline'>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="type.html">TYPE</a></li>
+			<li><a href="food.html">FOOD</a></li>
+			<li><a href="production.html">PRODUCTION</a></li>
+			<li class="dropdown">
+			  <a href='#' data-toggle='dropdown'>ABOUT<span class='caret'></span></a>
+			  <ul class='dropdown-menu text-right'>
+			    <li><a href='contact.html'>Contact us</a></li>
+				<li><a href='http://user.qzone.qq.com/450490365'>QQzone</a></li>
+				<li><a href='https://www.facebook.com/fangfang.fu.315'>Facebook</a></li>
+			  </ul>
+			</li>
+		</ul>
+	</div>
+<div class='container'>		
+	<div class='content text-center'>
+		<h2>Pig Type</h2>
+		<div>
+			<figure class="image col-md-4">
+			<img id="type1" src="images/poland.jpg">
+			<figcaption><a target="_blank" href="http://knowledgebase.lookseek.com/Poland-China-Pig.html">Poland China Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type2" src="images/AmericanYorkshire.jpg">
+			<figcaption><a target="_blank" href="http://bib.ge/gori/open.php?id=836">American Yorkshire Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type3" src="images/mangalitsa.jpg">
+			<figcaption><a target="_blank" href="https://en.wikipedia.org/wiki/Mangalica">Mangalica Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type4" src="images/tamworth.jpg">
+			<figcaption><a target="_blank" href="http://www.tamworthswine.org/tamworth-history/">Tamworth Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type5" src="images/miniature.jpg">
+			<figcaption><a target="_blank" href="http://greatinspire.com/35-cute-miniature-pig-pictures/">Cute Miniature Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type6" src="images/hereford2.jpg">
+			<figcaption><a target="_blank" href="https://en.wikipedia.org/wiki/Hereford_pig">Hereford Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type7" src="images/Iberian.jpg">
+			<figcaption><a target="_blank" href="http://pasturebraised.com/iberian-pig-school/">Iberian Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type8" src="images/oxford.jpg">
+			<figcaption><a target="_blank" href="https://en.wikipedia.org/wiki/Oxford_Sandy_and_Black">Oxford Sandy and Black Pig</a></figcaption>
+			</figure>
+			<figure class="image col-md-4">
+			<img id="type9" src="images/swabian.jpg">
+			<figcaption><a target="_blank" href="https://en.wikipedia.org/wiki/Swabian-Hall_swine">Swabian-Hall Swine Pig</a></figcaption>
+			</figure>
+		</div>
   </div>
 </div>
-<div style="clear: both;"></div> 
-<div class="footer">
+<div class='footer col-md-12 text-center'>
   <p>&copy; Pig-Profile - 2015</p>
 </div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src='js/bootstrap.js'></script>
 </body>
 </html>
