@@ -1,4 +1,3 @@
-# Pig-profile
-A website teaching about pigs
+# FangDev.github.io
 
-http://fufangfang.com/Pig-profile/
+compass watch --output-style compressed

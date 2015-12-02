@@ -1,86 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link href='css/bootstrap.css' rel="stylesheet">
+	<link href='css/main.css' rel='stylesheet'>
 	<style>
-	.self_clear:after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-	
-	.title {
-		text-align: center;
-	}
-	
-	figure {
-		width: 200px;
-		display: clear;
-	}
-	
-	figure.left_figure {
-		float: left;
-	}
-	
-	figure.right_figure {
-		float: right;
-	}
 	
 	figcaption {
+	    color: brown;
 		text-align: center;
-		font-size: 10px;
+		font-size: 20px;
 	}
 	
 	figure img {
-		width: 100%;
-		height: auto;
+		width: 300px;
+		height: 200px;	
 	}
-	
-	.container {
-		width: 1000px;
-		margin: auto;
+	h2 {
+	  color: #E6A7B0;
+	  font-family: Georgia;
+	  font-size: 25px;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	}
+	.source {
+	  padding-top: 30px;
+	  padding-bottom: 15px;
+	}
+	.content{
+	  font-size: 20px;
+	  line-height: 1.5;
+	}
+	#source2{
+	  padding-bottom: 25px;
+	}
+	.p1, .p2, .p3, .p4 {
+	  text-align: left;
+	}
+	.p1 {
+	  padding-bottom: 15px;
+	}
+	.row{
+	  padding-top: 15px;
 	}
 	</style>
 	
 </head>
 <body>
-<div class="navigation">
-	<h1>Pig-Profile</h1>
-	<ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="type.html">Type</a></li>
-	  <li><a href="food.html">Food</a></li>
-	  <li><a href="production.html">Production</a></li>
-	</ul>
-</div>
-<div class="content">
-	<div class="container">
-	<h2 class="title">Pig Production</h2>
-	<figure class="right_figure">
-		<img src="images/pigs_in_farm.jpg" alt="Pigs in a farm">
-		<figcaption>Pigs in a farm.</figcaption>
-	</figure>
-	<p>Pig farming is the raising and breeding of domestic pigs. It is a branch of animal husbandry. Pigs are raised principally as food (e.g. pork, bacon, gammon) and sometimes for their skin.</p>
-		<figure class="left_figure">
-		<img src="images/suckling.jpg" alt="Suckling piglets">
-		<figcaption>Suckling piglets.</figcaption>
-	</figure>
-	<p>Pigs are amenable to many different styles of farming. intensive commercial units, commercial free range enterprises, extensive farming - being allowed to wander around a village, town or city, or tethered in a simple shelter or kept in a pen outside the owners house. Historically pigs were kept in small numbers and were closely associated with the residence of the owner, or in the same village or town. They were valued as a source of meat, fat and for the ability to turn inedible food into meat, and often fed household food waste if kept on a homestead. Pigs have been farmed to dispose of municipal garbage on a large scale.</p>
-	<figure class="right_figure">
-		<img src="images/farm.jpg" alt="Pigs in a farm">
-		<figcaption>Pigs in a farm.</figcaption>
-	</figure>
-	<p>All these forms of pig farm are in use today. In developed nations, commercial farms house thousands of pigs in climate-controlled buildings. Pigs are a popular form of livestock, with more than one billion pigs killed each year worldwide, 100 million of them in the USA. The majority of pigs are used for human food but also supply skin, fat and other materials for use as clothing, ingredients for processed foods, cosmetics and other and medical use.</p>
-	<p>The activities on a pig farm depend on the husbandry style of the farmer, and range from very little intervention (as when pigs are allowed to roam villages or towns and dispose of garbage) to intensive systems where the pigs are contained in a building for the majority of their lives. Each pig farm will tend to adapt to the local conditions and food supplies and fit their practices to their specific situation.</p>
-	<div style="clear: both;"></div> 
-	<p>Sources:</p>
-	<ol>
-		<li id="source1">Wikipedia - <a href="https://en.wikipedia.org/wiki/Pig_farming">https://en.wikipedia.org/wiki/Pig_farming</a></li>
-	</ol>
+  <div class='title-background col-md-12 text-center'>
+	  <div class='title'></div>
+    </div>
+
+    <div class='navigation text-center'>	
+		<ul class='list-inline'>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="type.html">TYPE</a></li>
+			<li><a href="food.html">FOOD</a></li>
+			<li><a href="production.html">PRODUCTION</a></li>
+			<li class="dropdown">
+			  <a class='dropdown-toggle' href='#' data-toggle='dropdown'>ABOUT<span class='caret'></span></a>
+			  <ul class='dropdown-menu text-right'>
+			    <li><a href='contact.html'>Contact us</a></li>
+				
+				<li><a href='http://user.qzone.qq.com/450490365'>QQzone</a></li>
+				<li><a href='https://www.facebook.com/fangfang.fu.315'>Facebook</a></li>
+			  </ul>
+			</li>
+		</ul>
 	</div>
+<div class="container">
+	<div class='content text-center'>
+	<h2>Pig Production</h2>
+	<div class='p1 col-md-12'>
+	  <p>Pig farming is the raising and breeding of domestic pigs. It is a branch of animal husbandry. Pigs are raised principally as food (e.g. pork, bacon, gammon) and sometimes for their skin.</p>
+	</div>
+	<div class='row'>
+		<div class='col-md-4'>
+			<figure class='pig1'>
+				<img src="images/pigs_in_farm.jpg" alt="Pigs in a farm">
+				<figcaption>Pigs in a farm.</figcaption>
+			</figure>
+		</div>
+		<div class='p2 col-md-8'>
+		  <p>Pigs are amenable to many different styles of farming. intensive commercial units, commercial free range enterprises, extensive farming - being allowed to wander around a village, town or city, or tethered in a simple shelter or kept in a pen outside the owners house. Historically pigs were kept in small numbers and were closely associated with the residence of the owner, or in the same village or town. They were valued as a source of meat, fat and for the ability to turn inedible food into meat, and often fed household food waste if kept on a homestead. Pigs have been farmed to dispose of municipal garbage on a large scale.</p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-4'>	
+			<figure class='pig2'>
+				<img src="images/suckling.jpg" alt="Suckling piglets">
+				<figcaption>Suckling piglets.</figcaption>
+			</figure>
+		</div>
+		<div class='p3 col-md-8'>
+		  <p>All these forms of pig farm are in use today. In developed nations, commercial farms house thousands of pigs in climate-controlled buildings. Pigs are a popular form of livestock, with more than one billion pigs killed each year worldwide, 100 million of them in the USA. The majority of pigs are used for human food but also supply skin, fat and other materials for use as clothing, ingredients for processed foods, cosmetics and other and medical use.</p>
+		</div>
+    </div>
+	<div class='row'>
+	    <div class='p4 col-md-8'>
+		 <p>The activities on a pig farm depend on the husbandry style of the farmer, and range from very little intervention (as when pigs are allowed to roam villages or towns and dispose of garbage) to intensive systems where the pigs are contained in a building for the majority of their lives. Each pig farm will tend to adapt to the local conditions and food supplies and fit their practices to their specific situation.</p>
+		</div>
+		<div class='col-md-4'>
+			<figure class="right_figure">
+				<img src="images/farm.jpg" alt="Pigs in a farm">
+				<figcaption>Pigs in a farm.</figcaption>
+			</figure>
+		</div>
+	</div>
+	<div class='col-md-12 text-left'>
+		<p class='source'>Sources:</p>
+		<ol>
+			<li id="source2">1. Wikipedia - <a href="https://en.wikipedia.org/wiki/Pig_farming">https://en.wikipedia.org/wiki/Pig_farming</a></li>
+		</ol>
+	</div>
+    </div>
 </div>
-<div class="footer">
-  <p>&copy; Pig-Profile - 2015</p>
- </div>
+<div class="footer col-md-12 text-center">
+  <p>&copy; Pig-Profile - 2015</p> 
+</div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src='js/bootstrap.js'></script>
 </body>
 </html>
