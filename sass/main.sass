@@ -28,10 +28,15 @@ $header-height: 175px
 $intro-height: 100px
 $footer-height: 100px
 
+.title-background
+  background-color: $brown
+
 .title
   background: url(../images/pigbg.png) no-repeat
-  background-size: 100% 100%
+  background-size: 40%
   height: $header-height
+  background-repeat: no-repeat
+  background-position: center
   
 .navigation
   background: $mud
@@ -41,10 +46,8 @@ $footer-height: 100px
   
 .list-inline a
   color: $nav-text
-
-// It's bad practice to overwrite elements so widely, you usually want to use classes instead
-//ul li
-//  padding-right: 100px
+  padding-left: 22px
+  padding-right: 22px
   
 .content
   padding-top: 100px

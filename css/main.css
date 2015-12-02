@@ -72,13 +72,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 31, ../sass/main.sass */
-.title {
-  background: url(../images/pigbg.png) no-repeat;
-  background-size: 100% 100%;
-  height: 175px;
+.title-background {
+  background-color: #B48461;
 }
 
-/* line 36, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
+.title {
+  background: url(../images/pigbg.png) no-repeat;
+  background-size: 40%;
+  height: 175px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 41, ../sass/main.sass */
 .navigation {
   background: #A79264;
   font-size: 20px;
@@ -86,18 +93,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #f5dead;
 }
 
-/* line 42, ../sass/main.sass */
+/* line 47, ../sass/main.sass */
 .list-inline a {
   color: #f5dead;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
-/* line 49, ../sass/main.sass */
+/* line 52, ../sass/main.sass */
 .content {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-/* line 53, ../sass/main.sass */
+/* line 56, ../sass/main.sass */
 .footer {
   background: #8D5932;
   font-size: 25px;
